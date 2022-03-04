@@ -8,6 +8,7 @@ node_modules/
 .editorconfig
 .gitignore
 
+README.md
 Dockerfile
 Makefile
 nest-cli.json
