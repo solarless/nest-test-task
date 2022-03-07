@@ -15,4 +15,4 @@ $ make run
 
 `POST /api/footballers` - footballer creating
 
-`DELETE /api/footballers` - footballer deleting
+`DELETE /api/footballers/:id` - footballer deleting
