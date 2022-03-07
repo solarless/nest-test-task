@@ -1,6 +1,6 @@
 import { ForbiddenException, Injectable } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";
-import { findOneOrNotFound } from "../common/utils/find-one-or-not-found.util";
+import { findOneOrNotFound } from "../common/utils";
 import { Repository } from "typeorm";
 import { CreateFootballerDto } from "./dto/create-footballer.dto";
 import { Footballer } from "./footballers.entity";
