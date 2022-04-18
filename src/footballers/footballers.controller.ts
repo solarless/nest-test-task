@@ -9,7 +9,7 @@ import {
   ParseIntPipe,
   Post
 } from "@nestjs/common";
-import { CreateFootballerDto } from "./dto/create-footballer.dto";
+import { CreateFootballerDto } from "./dto";
 import { Footballer } from "./footballers.entity";
 import { FootballersService } from "./footballers.service";
 

@@ -8,7 +8,7 @@ import { FootballersService } from "./footballers.service";
   imports: [
     TypeOrmModule.forFeature([Footballer])
   ],
-  controllers: [FootballersController],
-  providers: [FootballersService]
+  providers: [FootballersService],
+  controllers: [FootballersController]
 })
 export class FootballersModule {}

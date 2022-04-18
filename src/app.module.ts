@@ -1,4 +1,5 @@
-import { Module } from '@nestjs/common';
+import { Module, ValidationPipe } from '@nestjs/common';
+import { APP_PIPE } from '@nestjs/core';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { FootballersModule } from './footballers/footballers.module';
 
@@ -11,6 +12,12 @@ import { FootballersModule } from './footballers/footballers.module';
       autoLoadEntities: true,
       synchronize: true
     })
+  ],
+  providers: [
+    {
+      provide: APP_PIPE,
+      useClass: ValidationPipe
+    }
   ]
 })
 export class AppModule {}
