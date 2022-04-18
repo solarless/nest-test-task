@@ -5,13 +5,13 @@ import { FootballersModule } from './footballers/footballers.module';
 
 @Module({
   imports: [
-    FootballersModule,
     TypeOrmModule.forRoot({
       type: 'sqlite',
       database: 'data/db.sqlite',
       autoLoadEntities: true,
       synchronize: true
-    })
+    }),
+    FootballersModule
   ],
   providers: [
     {
